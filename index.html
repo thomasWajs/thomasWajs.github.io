@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+
+<main>
+    <h1>
+        🥂 La carte des boissons 🥂
+    </h1>
+    
+    
+    <h2>🥤 Les softs</h2>
+    
+    <div class="item">
+        <span class="name">Succulent Sirop Maison</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Thym serpolet, Sauge, Origan, Bergamotte, Menthe
+    </div>
+    
+    <div class="item">
+        <span class="name">Sirop</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Grenadine, Orgeat, Citron, Cerise, Mélange provençal
+    </div>
+    
+    <div class="item">
+        <span class="name">Jus de fruit</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Orange, Mangue
+    </div>
+    
+    <div class="item">
+        <span class="name">L'Eau pure et limpide de Dommartin</span>
+        <span class="dots"></span>
+    </div>
+    
+    <h2>🍺 Les bières</h2>
+    
+    <div class="item">
+        <span class="name">♥ Brewdog ♥</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Punk IPA, Cybernauts, Hazy Jane
+    </div>
+    
+    <div class="item">
+        <span class="name">La belgique</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Duvel, Tripel Karmeleitt
+    </div>
+    
+    <h2>🍸 Les apéros</h2>
+    
+    <div class="item">
+        <span class="name">Kir</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Mûre, Framboise, Myrtille, Pain d'épice, Safran, Fruits rouges "Homemade by Teuz&Bus"
+    </div>
+    
+    <div class="item">
+        <span class="name">Macvin</span>
+        <span class="dots"></span>
+    </div>
+    
+    <div class="item">
+        <span class="name">Vin de noix</span>
+        <span class="dots"></span>
+    </div>
+    
+    <h2>🍷 Les vins</h2>
+    
+    <div class="item">
+        <span class="name">Le Rouge</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Bourgogne, Bordeaux, Sud-Ouest
+    </div>
+    
+    <div class="item">
+        <span class="name">Le Blanc</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Bourgogne, Alsace, Savoie, Loire
+    </div>
+    
+    <div class="item">
+        <span class="name">Les Bulles</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Crémant d'Alsace, Champagne
+    </div>
+    
+    <div class="item">
+        <span class="name">Tariquet "Les premières grives" 2018</span>
+        <span class="dots"></span>
+    </div>
+    
+    <div class="item">
+        <span class="name">Pinot Gris Vendanges Tardives 2016</span>
+        <span class="dots"></span>
+    </div>
+    
+    <h2>🥃 Les alcools forts</h2>
+    
+    <div class="item">
+        <span class="name">Whisky</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Nikka "From the Barrel", Hibiki Harmony, The Singleton 15 ans
+    </div>
+    
+    <div class="item">
+        <span class="name">Armagnac</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Laubade 1987
+    </div>
+    
+    <div class="item">
+        <span class="name">Génépi</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Nature ou Myrtille
+    </div>
+    
+    <div class="item">
+        <span class="name">Rhum</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+    
+    </div>
+    
+    <div class="item">
+        <span class="name">Fruits ( 35° )</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Poire, Framboise, Myrtille
+    </div>
+</main>
+
+</body>
+
+<style>
+    html{
+        font-size: 16px;
+        background-color: #eee;
+        color: #222;
+        
+        font-family:
+            system-ui,
+            -apple-system, /* Firefox supports this but not yet `system-ui` */
+            'Segoe UI',
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif,
+            'Apple Color Emoji',
+            'Segoe UI Emoji';
+    }
+	
+	@media only screen and (max-width: 800px){
+		html{
+			font-size: 10px;
+		}
+	}
+    
+    main{
+		max-width: 800px;
+        margin: auto;
+        padding-bottom: 3em;
+		padding-left: 1em;
+		padding-right: 1em;
+    }
+    
+    h1{
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    
+    h2{
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin-top: 1.5em;
+    }
+    
+    .item{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.5em;
+		
+		font-size: 1.3rem;
+        text-transform: capitalize;
+    }
+    
+    .item:after{
+        content: '0€';
+        color: #666;
+    }
+    
+    .dots{
+        border-bottom: 1px dotted #555;
+        flex-grow: 1;
+    }
+	
+    .details {
+		display: flex;
+        color: #666;
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+    }
+</style>
+</html>
