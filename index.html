@@ -17,11 +17,11 @@
     <h2>🥤 Les softs</h2>
     
     <div class="item">
-        <span class="name">Succulent Sirop Maison</span>
+        <span class="name unavailable">Succulent Sirop Maison</span>
         <span class="dots"></span>
     </div>
     <div class="details">
-        Thym serpolet, Origan, Bergamotte, Menthe
+        Rupture
     </div>
     
     <div class="item">
@@ -130,7 +130,7 @@
         <span class="dots"></span>
     </div>
     <div class="details">
-        Mûre, Framboise, Myrtille, Griottes, Figue, Fraise-kiwi, Pain d'épice, Safran, Fruits rouges "Homemade by Teuz&Bus"
+        Mûre, Framboise, Myrtille, Griottes, Figue, Fraise-kiwi, Pain d'épice, Fruits rouges "Homemade by Teuz&Bus"
     </div>
 
     <div class="item">
@@ -162,9 +162,17 @@
         <span class="dots"></span>
     </div>
     <div class="details">
-        Rhum Charette, Menthe du jardin, Citron, Eau gazeuse, Sucre
+        Rhum Charette, Menthe du jardin, Citron, Eau gazeuse, Sucre, Glace
     </div>
     
+    <div class="item">
+        <span class="name">Spritz</span>
+        <span class="dots"></span>
+    </div>
+    <div class="details">
+        Aperol, Prosseco, Eau gazeuse, Glace
+    </div>
+	
     <h2>🍷 Les vins</h2>
     
     <div class="item">
@@ -208,7 +216,6 @@
     <div class="details">
         Wolfberger
     </div>
-
 
     <div class="item">
         <span class="name">Rosé griottes</span>
@@ -332,11 +339,11 @@
 	}
     
     main{
-		max-width: 800px;
+        max-width: 800px;
         margin: auto;
         padding-bottom: 3em;
-		padding-left: 1em;
-		padding-right: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     
     h1{
@@ -356,7 +363,7 @@
         flex-direction: row;
         margin-top: 1.5em;
 		
-		font-size: 1.3rem;
+        font-size: 1.3rem;
         text-transform: capitalize;
     }
     
@@ -371,10 +378,15 @@
     }
 	
     .details {
-		display: flex;
+        display: flex;
         color: #666;
         font-size: 1.1rem;
         margin-top: 0.5rem;
+    }
+    
+    .unavailable {
+        color: #7777;
+        text-decoration: line-through;
     }
 </style>
 </html>
